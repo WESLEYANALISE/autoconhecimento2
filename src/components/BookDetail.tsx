@@ -104,7 +104,7 @@ export const BookDetail = ({
               </Button>
               <Button variant="secondary" onClick={handleDownload} className="flex-1 flex items-center gap-2">
                 <Download className="h-4 w-4" />
-                Download Pdf
+                Download Livro
               </Button>
             </div>
 
