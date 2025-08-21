@@ -58,7 +58,7 @@ export const AreasGrid = ({
         // Fetch recent books
         const {
           data: booksData
-        } = await supabase.from("01. AUTO CONHECIMENTO").select("livro, imagem").not("imagem", "is", null).neq("imagem", "").order("id", {
+        } = await supabase.from("02. Empreendedorismo e Negócios").select("livro, imagem").not("imagem", "is", null).neq("imagem", "").order("id", {
           ascending: false
         }).limit(10);
         if (booksData) {
@@ -69,7 +69,7 @@ export const AreasGrid = ({
         const {
           data: areasData,
           error
-        } = await supabase.from("01. AUTO CONHECIMENTO").select("area").not("area", "is", null);
+        } = await supabase.from("02. Empreendedorismo e Negócios").select("area").not("area", "is", null);
         if (error) {
           console.error("Error fetching areas:", error);
           return;
@@ -114,12 +114,12 @@ export const AreasGrid = ({
         <div className="text-center mb-6">
           <div className="relative inline-block mb-3">
             <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent leading-tight">
-              Biblioteca de Auto Conhecimento
+              Biblioteca de Empreendedorismo e Negócios
             </h1>
             <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-16 h-0.5 bg-gradient-primary rounded-full" />
           </div>
           <p className="text-sm md:text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Descubra livros transformadores para o seu desenvolvimento pessoal e profissional
+            Descubra livros essenciais para o seu sucesso empresarial e desenvolvimento dos negócios
           </p>
         </div>
 

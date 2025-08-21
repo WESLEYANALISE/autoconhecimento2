@@ -26,9 +26,8 @@ export const BooksGrid = ({ selectedArea, onBookClick, onBack, readBooks, onStat
     const fetchBooks = async () => {
       try {
         const { data, error } = await supabase
-          .from("01. AUTO CONHECIMENTO")
+          .from("02. Empreendedorismo e Negócios")
           .select("*")
-          .eq("area", selectedArea)
           .order("id", { ascending: false });
 
         if (error) {

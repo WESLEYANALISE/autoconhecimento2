@@ -38,7 +38,7 @@ export const GlobalSearch = ({ onBookSelect }: GlobalSearchProps) => {
       setLoading(true);
       try {
         const { data, error } = await supabase
-          .from("01. AUTO CONHECIMENTO")
+          .from("02. Empreendedorismo e Negócios")
           .select("*")
           .or(`livro.ilike.%${searchQuery}%,autor.ilike.%${searchQuery}%`)
           .limit(10);
