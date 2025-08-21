@@ -203,7 +203,7 @@ export const BookDetail = ({
                 </div>
                 
                 <Button 
-                  onClick={() => window.location.href = 'https://livros-premium.vercel.app/'}
+                  onClick={() => window.location.href = 'https://premium-livros.vercel.app/'}
                   className="w-full bg-gradient-primary hover:shadow-glow transition-all duration-300"
                 >
                   <Crown className="h-4 w-4 mr-2" />
